@@ -36,7 +36,7 @@
           </li>
           <li class="nav-item">
             <a data-bs-toggle="collapse" href="#base">
-              <i class="fas fa-layer-group"></i>
+              <i class="fas fa-users"></i>
               <p>Students</p>
               <span class="caret"></span>
             </a>

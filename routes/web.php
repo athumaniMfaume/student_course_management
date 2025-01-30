@@ -11,12 +11,14 @@ Route::get('/', function () {
     return view('students.view_student',compact('students'));
 });
 
+
 Route::get('students/create', [StudentController::class,'create'])->name('students.create');
 Route::post('students/store', [StudentController::class,'store'])->name('students.store');
 Route::get('students/index', [StudentController::class,'index'])->name('students.index');
 Route::get('students/edit/{student}', [StudentController::class,'edit'])->name('students.edit');
 Route::post('students/update/{student}', [StudentController::class,'update'])->name('students.update');
 Route::delete('/students/{student}', [StudentController::class, 'destroy'])->name('students.destroy');
+
 Route::get('courses/create', [CourseController::class,'create'])->name('courses.create');
 Route::post('courses/store', [CourseController::class,'store'])->name('courses.store');
 Route::get('courses/index', [CourseController::class,'index'])->name('courses.index');
